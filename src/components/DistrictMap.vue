@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import * as d3 from 'd3'
+// import * as d3 from 'd3'
 import UnitedStatesDistricts from '../assets/US_Congressional_districts.svg'
 export default {
   name: 'DistrictMap',
@@ -25,11 +25,16 @@ export default {
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-svg path {
-  fill: none;
-  stroke: #76BF8A;
+<style>
+.map {
+  background-color: aqua;
+}
+
+svg path:hover {
+  fill: orange;
+  stroke: blue;
   stroke-width: 3px;
+
 }
 
 </style>
