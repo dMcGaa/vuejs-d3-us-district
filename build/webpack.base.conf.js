@@ -61,7 +61,14 @@ module.exports = {
       },
       {
         test: /\.svg?$/,
-        loader: 'vue-svg-loader'
+        loader: 'vue-svg-loader',
+        options: {
+          svgo: {
+            plugins: [
+            { cleanupIDs: false }
+            ]
+          }
+        }
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
