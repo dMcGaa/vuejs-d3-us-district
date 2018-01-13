@@ -1,5 +1,5 @@
 <template>
-  <div class="map">
+  <div class="map" v-on:click="clickHandler">
     <UnitedStatesDistricts class="icon" />
   </div>
 </template>
@@ -19,6 +19,9 @@ export default {
   mounted () {
   },
   methods: {
+    clickHandler: function (event) {
+      console.log('clicked', event)
+    }
   }
 }
 </script>
