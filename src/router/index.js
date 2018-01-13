@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import D3Basic from '@/components/D3Basic'
+import DistrictMap from '@/components/DistrictMap'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/d3basic',
-      name: 'D3Basic',
-      component: D3Basic
+      path: '/districtmap',
+      name: 'DistrictMap',
+      component: DistrictMap
     }
   ]
 })
