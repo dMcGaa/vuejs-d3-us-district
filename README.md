@@ -2,6 +2,10 @@
 
 > Vue app for Voting districts D3
 
+## Zoom Pan
+- d3?
+- https://www.npmjs.com/package/svg-pan-zoom - svg-pan-zoom?
+
 ## Build Setup
 
 ``` bash
